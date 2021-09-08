@@ -20,4 +20,6 @@
 
 > dd
 > ff
-[url=https://imgbb.com/][img]https://i.ibb.co/Mc2H4Kg/1043.jpg[/img][/url]
+
+
+https://ibb.co/cTRGqbB
