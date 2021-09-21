@@ -453,6 +453,28 @@ img {
   background-color: #0A223D;
 }
 
+.breadcrumbs__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 18px 0;
+}
+
+.breadcrumbs__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: "/";
+  margin-right: 4px;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
