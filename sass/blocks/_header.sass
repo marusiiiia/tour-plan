@@ -1,4 +1,86 @@
-.header
-  background-color: #fff
+.navbar
+  background-color: #fff   
+  &__search
+    margin-right: auto
+    margin-left: 108px
 
-      
+.navbar-top
+  padding: 40px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__menu-button 
+    display: none
+  
+.search
+  width: 350px
+  height: 40px
+  border: none  
+  position: relative
+  border-radius: 6px
+  overflow: hidden  
+  background-color:red
+    
+
+  &__input
+    border: none
+    height: 100%    
+    width: 100%
+    padding-left: 23px
+    padding-right: 68px
+    font-family: inherit 
+    background-color: $light-color
+    color: inherit
+    
+  &__button
+    height: 100%
+    position: absolute
+    right: 0
+    width: 56px
+    background-color: $primary    
+    border: none
+
+  &__input::-webkit-input-placeholder 
+    color: $text-color
+   
+  &__input::-moz-placeholder 
+    color: $text-color
+   
+.user  
+  display: flex
+  align-items: center
+  text-decoration: none
+  &__avatar
+    width: 40px
+    height: 40px
+    object-fit: cover
+    border-radius: 50%
+  &__name
+    font-size: 14px
+    line-height: 18px
+    padding-left: 18px
+    color: $text-color
+
+.navbar-menu
+  display: flex
+  margin: 0
+  padding: 0
+  list-style: none
+  justify-content: space-between
+  padding: 31px 0
+  &__link
+    font-weight: bold
+    color: #fff
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 18px
+  
+
+.navbar-bottom 
+  background-color: $dark
+
+
+
+
+
