@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
   </head>
   <body>
     <header class="navbar">
@@ -109,7 +110,7 @@
                   <img src="img/star.svg" alt="star">
                 </div>              
                 <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
-                <span class="hotel-offer hotel-info__offer">Flash Offer</span>
+                <span class="hotel-offer hotel-info__offer" onclick="send()">Flash Offer</span>
               </div>
               <!-- /.hotel-wrapper -->
               <p class="hotel-description hotel-info__description">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
@@ -119,11 +120,39 @@
               <span class="rating__counter">4.5/5</span>
             </div>
           </div>
+          <!-- /.hotel-info -->
 
+          <div class="hotel-grid">
+            <div class="hotel-slider">
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="img/slide1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/slide2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/slide3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/slide4.jpg" alt=""></div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <button class="swiper-button swiper-button--prev"></button>
+                <button class="swiper-button swiper-button--next"></button>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+
+            </div>
+          </div>
         </div>
         <!-- /.container -->
       </section>
       <!-- /.hotel -->
     </main>
-  </body>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>  
 </html>
