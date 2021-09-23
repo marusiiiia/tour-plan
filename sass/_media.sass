@@ -1,6 +1,15 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+  .hotel-slider
+    width: 590px
+  .swiper-slide__img
+    height: 100%
+  .booking
+    width: 340px
+  .map
+    width: 340px
+
 
 @media (max-width: 992px)
   .container
@@ -19,11 +28,39 @@
       &__link        
         font-size: 12px
         line-height: 15px
-.menu-button__line
-  width: 16px
-  height: 1px
-  background-color: $text-color
+  .menu-button__line
+    width: 16px
+    height: 1px
+    background-color: $text-color
+  
+   
+    
+  .hotel  
+    &-slider
+      margin: 0  
+      margin-bottom: 20px        
+    &-grid
+      flex-direction: column
+    &-right
+      width: 100%
+      flex-direction: row
+      align-items: center
+    &-slider
+      width: 100%
+
+  .swiper-slide__img
+    width: 100%    
+  .booking
+    width: 340px
+    
+  
 @media (max-width: 768px)
+  .swiper 
+    width: 100%
+    height: 100%
+    &-slide__img
+      height: 100%
+      width: 100%
   .container
     max-width: 576px
     width: 92%    
@@ -39,9 +76,7 @@
       justify-content: space-between
       padding: 0
       border: none
-      cursor: pointer
-
-  
+      cursor: pointer  
   .rating
     display: none
   .hotel
@@ -49,14 +84,33 @@
       flex-basis: auto
     &-name
       flex-basis: 100%
-  .hotel-info
-    &__offer
-      order: -1
-    &__text
-      width: 100%
-    
-  
+    &-right
+      flex-direction: column
+    &-slider
+      height: 350px
+    &-info
+      &__offer
+        order: -1
+      &__text
+        width: 100%
+    &-right
+      flex-direction: column  
+  .booking    
+    margin-right: 0
+    width: 100%
+    margin-bottom: 20px    
+  .map
+    width: 100%
+
 @media (max-width: 576px)
-      .navbar
-        &__logo
-          width: 99px
+  .navbar
+    &__logo
+      width: 99px
+  .hotel
+    &-slider
+      height: 250px
+
+@media (max-width: 400px)
+  .hotel
+    &-slider
+      height: 200px
