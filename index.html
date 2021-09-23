@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e903e03e-69ae-4ee4-a211-4958f84d08d9" type="text/javascript"></script>
   </head>
   <body>
     <header class="navbar">
@@ -146,13 +147,49 @@
               </div>
 
             </div>
+            <div class="hotel-right">
+              <div class="booking">
+                <div class="booking__info">
+                  <div class="booking__price">
+                    <span class="booking__start-price">price starts as</span>
+                    <strong class="booking__pricetag">$ 8,500</strong>
+                    <span class="booking__per-room">per room / night</span>
+                  </div>
+                  <div class="booking__room">
+                    <div class="booking__text">
+                      <img src="img/user.svg" alt="Icon: user" class="booking__icon"> 
+                      <span class="booking__desc">2 x Guests</span>
+                    </div>
+                    <div class="booking__text">
+                      <img src="img/home.svg" alt="Icon: home" class="booking__icon"> 
+                      <span class="booking__desc">1 x Room</span>
+                    </div>                  
+                  </div>
+                  <!-- /.booking__room -->  
+                </div>
+                <!-- /.booking__info -->
+                <div class="booking__call-center">
+                  <span class="booking__heading">Quick Booking</span>
+                  <a href="tel:12100" class="booking__number-link">
+                    <img src="img/phone-call.svg" alt="Icon: phone">
+                    <span class="booking__number">12100</span>
+                  </a>
+                </div>
+                <button class="booking__button">View Other Options</button>
+              </div>
+              <!-- /.booking -->
+              <div class="map">
+                <div id="map"></div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- /.container -->
       </section>
       <!-- /.hotel -->
     </main>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>  
+    <script src="js/icon_customImage.js" type="text/javascript"></script>
     <script src="js/main.js"></script>
   </body>  
 </html>
