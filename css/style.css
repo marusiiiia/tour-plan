@@ -715,6 +715,79 @@ img {
   overflow: hidden;
 }
 
+.newsletter {
+  position: relative;
+  padding: 98px 0 87px;
+  background-image: url(../img/subscribe-bg.jpg);
+  background-position: center;
+}
+
+.newsletter::before {
+  position: absolute;
+  content: '';
+  background-color: rgba(10, 34, 61, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter-wrapper {
+  position: relative;
+  width: 731px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.newsletter-title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.newsletter-title__strong {
+  display: block;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  width: 350px;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.subscribe__input {
+  width: 100%;
+  height: 100%;
+  padding-left: 33px;
+  padding-right: 68px;
+}
+
+.subscribe__button {
+  position: absolute;
+  min-width: 65px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: #EC1F46;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -734,7 +807,7 @@ img {
 }
 
 @media (max-width: 992px) {
-  .container {
+  .container, .newsletter-wrapper {
     max-width: 700px;
   }
   .navbar__search {
@@ -782,6 +855,9 @@ img {
   .booking {
     width: 340px;
   }
+  .newsletter {
+    padding: 92px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -793,7 +869,7 @@ img {
     height: 100%;
     width: 100%;
   }
-  .container {
+  .container, .newsletter-wrapper {
     max-width: 576px;
     width: 92%;
   }
@@ -841,6 +917,30 @@ img {
   }
   .map {
     width: 100%;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter-title {
+    margin: 0;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .newsletter__title {
+    margin-bottom: 37px;
+  }
+  .subscribe {
+    width: 95%;
+    max-width: 380px;
   }
 }
 
