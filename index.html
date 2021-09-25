@@ -134,35 +134,34 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div class="swiper-slide">
+                  <div class="swiper-slide hotel__slide">
                     <img
                       class="swiper-slide__img"
                       src="img/slide1.jpg"
                       alt=""
                     />
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide hotel__slide">
                     <img
                       class="swiper-slide__img"
                       src="img/slide2.jpg"
                       alt=""
                     />
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide hotel__slide">
                     <img
                       class="swiper-slide__img"
                       src="img/slide3.jpg"
                       alt=""
                     />
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide hotel__slide">
                     <img
                       class="swiper-slide__img"
                       src="img/slide4.jpg"
                       alt=""
                     />
                   </div>
-                  ...
                 </div>
                 <!-- If we need pagination -->
 
@@ -172,6 +171,7 @@
 
                 <!-- If we need scrollbar -->
               </div>
+              <!-- /swiper -->
             </div>
             <div class="hotel-right">
               <div class="booking">
@@ -239,6 +239,54 @@
         <!-- /.newsletter-wrapper -->
       </div>
       <!-- /.section newsletter -->
+      <section class="reviews">
+        <h2 class="reviews-title">What people think about us</h2>
+        <div class="swiper-outside-container">
+          <div class="reviews-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide reviews-swiper__slide">
+                <div class="reviews__profile">
+                  <img src="img/reviews-avatar.jpg" class="reviews__avatar" />
+                  <span class="reviews__username">Megan Fox</span>
+                  <span class="reviews__date">Stayed 18 Nov, 2019</span>
+                  <div class="reviews__rating">
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                    <img src="img/star.svg" alt="star" />
+                  </div>
+                </div>
+                <p class="reviews__text">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+            </div>
+            <button
+              class="reviews-swiper__button reviews-swiper__button--prev"
+            ></button>
+            <button
+              class="reviews-swiper__button reviews-swiper__button--next"
+            ></button>
+          </div>
+        </div>
+        <!-- /.swiper-outside-container -->
+        <!-- /slide -->
+
+        <!-- /review-swiper -->
+      </section>
+
+      <!-- /.proba -->
     </main>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/icon_customImage.js"></script>

@@ -10,3 +10,33 @@ const swiper = new Swiper(".swiper", {
 
   // And if we need scrollbar
 });
+
+const reviewSwiper = new Swiper(".reviews-swiper", {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    // nextEl: ".reviews-swiper__button--next",
+    nextEl: ".reviews-swiper__button--next",
+
+    // prevEl: ".reviews-swiper__button--prev",
+    prevEl: ".reviews-swiper__button--prev",
+  },
+});
+
+const pronaSwiper = new Swiper(".proba-swiper", {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-swiper__button--next",
+    // nextEl: ".swiper-button-prev",
+
+    prevEl: ".reviews-swiper__button--prev",
+    // prevEl: ".swiper-button-next",
+  },
+
+  // And if we need scrollbar
+});

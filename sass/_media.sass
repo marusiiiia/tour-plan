@@ -36,14 +36,14 @@
     &-slider
       margin: 0  
       margin-bottom: 20px        
+      width: 100%
     &-grid
       flex-direction: column
     &-right
       width: 100%
       flex-direction: row
       align-items: center
-    &-slider
-      width: 100%
+      
 
   .swiper-slide__img
     width: 100%    
@@ -52,7 +52,22 @@
   
   .newsletter
     padding: 92px 0
+
+  .reviews
+    &-title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+    &-swiper
+      &__button
+        &--prev
+          left: -60px
+        &--next  
+          right: -60px
+  .swiper-outside-container
+    width: 580px
   
+        
 @media (max-width: 768px)
   .swiper 
     width: 100%
@@ -120,6 +135,24 @@
     width: 95%
     max-width: 380px
 
+  .swiper-outside-container
+    width: 92%
+
+  .reviews
+    &-title
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 42px
+    &__text
+        padding: 0
+    &-swiper      
+      &__button
+        top: 45px
+        &--prev
+          left: 44px
+        &--next  
+          right: 44px
+
 @media (max-width: 576px)
   .navbar
     &__logo
@@ -127,6 +160,11 @@
   .hotel
     &-slider
       height: 250px
+  .reviews   
+    &-swiper
+      &__slide
+        padding-right: 33px
+        padding-left: 33px
 
 @media (max-width: 400px)
   .hotel
