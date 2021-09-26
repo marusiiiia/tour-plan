@@ -147,11 +147,18 @@
         padding: 0
     &-swiper      
       &__button
-        top: 45px
+        top: 30px        
         &--prev
-          left: 44px
+          left: 50%
+          transform: translateX(-50%)
+          margin-left: -85px         
         &--next  
-          right: 44px
+          right: 50%
+          transform: translateX(50%)
+          margin-right: -85px 
+      &__slide
+        &::before, &::after
+          display: none
 
 @media (max-width: 576px)
   .navbar
