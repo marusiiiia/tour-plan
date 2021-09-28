@@ -13,7 +13,10 @@
     &-card
       width: 230px
       height: 230px
-    
+
+  .packages__list
+    grid-template-columns: 306px 306px 306px
+    gap: 20px
 
 
 
@@ -48,8 +51,7 @@
     &-right
       width: 100%
       flex-direction: row
-      align-items: center
-      
+      align-items: center      
 
   .swiper-slide__img
     width: 100%    
@@ -88,6 +90,10 @@
         max-width: 200px
     &-wrapper
       flex-wrap: wrap
+
+  .packages__list
+    grid-template-columns: 350px 350px 
+    gap: 30px
         
 @media (max-width: 768px)
   .swiper 
@@ -185,6 +191,15 @@
     &-card
       width: 48%
 
+  .packages__list
+    grid-template-columns: 80%
+    justify-content: center
+    gap: 30px
+  .big-packages-card
+    grid-template-columns: 1fr
+    grid-column: 1 / 2
+    &__img
+      max-height: 300px
 @media (max-width: 576px)
   .navbar
     &__logo
@@ -204,8 +219,30 @@
     &-card
       width: 100%
       height: 255px
+  .packages__list
+    grid-template-columns: 100%
 
 @media (max-width: 400px)
   .hotel
     &-slider
       height: 200px
+  .button-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+  .packages-card
+    height: 300px        
+    &__new-price
+      margin-bottom: 20px
+  .big-packages-card
+    height: 800px
+    &__img
+      max-height: 200px
+
+  .package-desc
+    margin-bottom: 15px
+    &__item
+      margin-bottom: 5px
+  
+      
+

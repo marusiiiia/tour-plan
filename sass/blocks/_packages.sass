@@ -1,0 +1,106 @@
+.packages
+  padding: 40px 0 70px 0
+  &-title
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin: 0
+    margin-bottom: 65px
+
+.packages__list
+  list-style: none
+  padding: 0
+  margin: 0
+  display: grid
+  grid-template-columns: repeat(3, 350px)
+  gap: 30px  
+
+.text-wrapper
+  padding: 30px 21px 25px 32px
+  display: grid
+  grid-template-rows: auto 1fr auto auto
+.text-wrapper-big
+  grid-template-rows: repeat(3,auto) 1fr auto auto
+.packages-card  
+  display: grid
+  grid-template-rows: 1fr 1fr
+  background-color: $dark
+  color: #fff
+  min-height: 500px  
+  border-radius: 8px
+  overflow: hidden
+  &__title
+    margin: 0
+    margin-bottom: 23px
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+  &__img
+    height: 100%
+    width: 100%
+    object-fit: cover
+  &__old-price
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
+  &__new-price
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+  &__button
+    font-family: Nunito
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    padding: 11px 27px
+    background-color: $primary
+    border: none
+    color: #fff
+    border-radius: 4px
+
+  
+.button-wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.big-packages-card
+  grid-column: span 2
+  grid-template-columns: 50% 50%
+  grid-template-rows: 1fr  
+  &__text
+    font-size: 14px;
+    line-height: 160.6%
+    margin-bottom: 34px
+  &__rating
+    margin-bottom: 6px
+  &__title
+    margin-bottom: 27px
+  &__desc
+    margin-bottom: 37px
+
+.package-desc
+  font-size: 12px
+  line-height: 15px
+  list-style: none
+  padding-left: 33px
+  margin: 0
+  &__item
+    margin-bottom: 11px
+    position: relative
+    &::before
+      content: ''
+      width: 14px
+      height: 14px
+      position: absolute
+      left: -33px
+      top: 0
+    &--address::before    
+      background-image: url(../img/geo.svg)
+    &--guests::before    
+      background-image: url(../img/user.svg)
+    &--rooms::before    
+      background-image: url(../img/home.svg)
+
