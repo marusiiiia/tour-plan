@@ -40,3 +40,11 @@ const pronaSwiper = new Swiper(".proba-swiper", {
 
   // And if we need scrollbar
 });
+
+const menuButton = document.querySelector(".navbar-top__menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("вижу клик");
+  document
+    .querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+});
