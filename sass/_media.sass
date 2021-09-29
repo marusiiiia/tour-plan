@@ -13,10 +13,17 @@
     &-card
       width: 230px
       height: 230px
+  
 
   .packages__list
     grid-template-columns: 306px 306px 306px
     gap: 20px
+  .footer
+    &__input
+      grid-column: span 2        
+      width: 100%
+  .tel-wrapper
+    max-width: 85%
 
 
 
@@ -94,6 +101,39 @@
   .packages__list
     grid-template-columns: 350px 350px 
     gap: 30px
+
+  .footer
+    padding-top: 73px
+    &-wrapper
+      grid-template-columns: repeat(3, auto)
+      grid-column-gap: 20px
+      justify-content: space-between      
+    &__input
+      grid-column: span 1
+      width: 100%
+    &__message
+      width: 100%
+    &__logo
+      padding-top: 0
+      grid-row: span 1
+      margin-bottom: 38px
+      width: 104px
+      height: 120.29px
+
+    &__social-network
+      grid-column: 2 / -1
+      grid-row: 1 / 2
+      align-self: center
+      margin-bottom: 38px
+    &__list
+      &--categoties-list
+        grid-row: span 1
+        margin-bottom: 61px
+    &-bottom
+      width: 100%
+    &__contact-form
+      margin-bottom: 53px
+
         
 @media (max-width: 768px)
   .swiper 
@@ -200,6 +240,24 @@
     grid-column: 1 / 2
     &__img
       max-height: 300px
+  .footer
+    &__list
+      &--details
+        grid-column: span 3  
+    &__contact-form
+      grid-column: span 3
+      
+    &__input
+      grid-column: span 2
+      width: 100%
+    &__message
+      width: 100%
+    &-bottom
+      min-width: auto
+
+
+
+
 @media (max-width: 576px)
   .navbar
     &__logo
@@ -221,6 +279,39 @@
       height: 255px
   .packages__list
     grid-template-columns: 100%
+
+  .footer
+    padding-top: 65px
+    &__social-network
+      flex-wrap: wrap
+      margin-bottom: 30px
+    &__title
+      &--social-title
+        margin-bottom: 20px
+    &-wrapper
+      grid-template-columns: 1fr
+      &>*
+        grid-column: span 1
+        grid-row: span 1
+    &__form
+      grid-template-columns: 1fr
+      &>*
+        grid-column: span 1
+        justify-self: start
+    &__button
+      order: 1
+    &-bottom
+      flex-wrap: wrap
+    &__contact-form
+      margin-bottom: 30px
+  .footer-bottom__list
+        margin-bottom: 10px
+
+
+
+      
+
+
 
 @media (max-width: 400px)
   .hotel
