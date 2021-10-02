@@ -1,50 +1,38 @@
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  loop: true,
+$(document).ready(function () {
+  const swiper = new Swiper(".swiper", {
+    loop: true,
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button--next",
-    prevEl: ".swiper-button--prev",
-  },
+    navigation: {
+      nextEl: ".swiper-button--next",
+      prevEl: ".swiper-button--prev",
+    },
+  });
 
-  // And if we need scrollbar
-});
+  const reviewSwiper = new Swiper(".reviews-swiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".reviews-swiper__button--next",
+      prevEl: ".reviews-swiper__button--prev",
+    },
+  });
 
-const reviewSwiper = new Swiper(".reviews-swiper", {
-  // Optional parameters
-  loop: true,
+  const pronaSwiper = new Swiper(".proba-swiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".reviews-swiper__button--next",
+      prevEl: ".reviews-swiper__button--prev",
+    },
+  });
 
-  // Navigation arrows
-  navigation: {
-    // nextEl: ".reviews-swiper__button--next",
-    nextEl: ".reviews-swiper__button--next",
+  $(".navbar-top__menu-button").on("click", function () {
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+  });
 
-    // prevEl: ".reviews-swiper__button--prev",
-    prevEl: ".reviews-swiper__button--prev",
-  },
-});
+  $(".modal-button").on("click", function () {
+    $($(this).attr("data-href")).addClass("modal--visible");
+  });
 
-const pronaSwiper = new Swiper(".proba-swiper", {
-  // Optional parameters
-  loop: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".reviews-swiper__button--next",
-    // nextEl: ".swiper-button-prev",
-
-    prevEl: ".reviews-swiper__button--prev",
-    // prevEl: ".swiper-button-next",
-  },
-
-  // And if we need scrollbar
-});
-
-const menuButton = document.querySelector(".navbar-top__menu-button");
-menuButton.addEventListener("click", function () {
-  console.log("вижу клик");
-  document
-    .querySelector(".navbar-bottom")
-    .classList.toggle("navbar-bottom--visible");
+  $(".modal__close").on("click", function () {
+    $(".modal").removeClass("modal--visible");
+  });
 });
