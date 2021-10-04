@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function ($) {
   const swiper = new Swiper(".swiper", {
     loop: true,
 
@@ -35,4 +35,32 @@ $(document).ready(function () {
   $(".modal__close").on("click", function () {
     $(".modal").removeClass("modal--visible");
   });
+
+  $(".modal__form").each(function () {
+    $(this).validate({
+      errorClass: "invalidd",
+      messages: {
+        name: {
+          required: "Надо - значит, надо!",
+        },
+        email: {
+          required: "мыло вводи давай!",
+          email: "Нормально вводи",
+        },
+      },
+    });
+  });
+
+  // jQuery(function ($) {
+  //   $("#phone-input").mask("+7 (999) 999-99-99");
+  // $("#phone").mask("(999) 999-9999");
+  // $("#tin").mask("99-9999999");
+  // $("#ssn").mask("999-99-9999");
+  // });
 });
+
+jQuery(function ($) {
+  $("#phone-input").mask("+7 (999) 999-99-99");
+});
+
+AOS.init();

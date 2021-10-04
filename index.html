@@ -11,14 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href="css/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e903e03e-69ae-4ee4-a211-4958f84d08d9"></script>
   </head>
   <body>
     <header class="navbar">
       <div class="container">
         <div class="navbar-top">
+          <!-- data-aos="fade-up-right" data-aos-duration="300" data-aos-easing="linear" -->
           <a href="#" class="logo navbar__logo">
             <img
               class="logo__image"
@@ -81,10 +83,6 @@
                   <img src="img/search.svg" alt="Icon: search" />
                 </button>
               </form>
-            </li>
-
-            <li class="navbar-menu__item navbar-menu__item">
-              <a href="" class="navbar-menu__link">Hotels</a>
             </li>
 
             <li class="navbar-menu__item">
@@ -455,7 +453,7 @@
         <!-- /.newsletter-wrapper -->
       </section>
       <!-- /.section newsletter -->
-      <section class="reviews">
+      <section class="reviews"">
         <h2 class="reviews-title">What people think about us</h2>
         <div class="swiper-outside-container">
           <div class="reviews-swiper">
@@ -547,7 +545,7 @@
         <div class="container">
           <h2 class="activities-title">Other Activities</h2>
           <ul class="activities-wrapper">
-            <li class="activities-card">
+            <li class="activities-card" data-aos="fade-up" data-aos-duration="300" data-aos-delay="100">
               <h2 class="activities-card__title">
                 The curious corner of chamarel
               </h2>
@@ -559,7 +557,7 @@
               <button class="activities-card__button">Book Now</button>
             </li>
 
-            <li class="activities-card">
+            <li class="activities-card" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">
               <h2 class="activities-card__title">Gymkhana club golf course</h2>
               <img
                 src="img/act-2.jpg"
@@ -568,7 +566,7 @@
               /><button class="activities-card__button">Book Now</button>
             </li>
 
-            <li class="activities-card">
+            <li class="activities-card" data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
               <h2 class="activities-card__title">
                 Tamarind falls hiking trip - full day
               </h2>
@@ -579,7 +577,7 @@
               /><button class="activities-card__button">Book Now</button>
             </li>
 
-            <li class="activities-card">
+            <li class="activities-card" data-aos="fade-up" data-aos-duration="300" data-aos-delay="400">
               <h2 class="activities-card__title">
                 The blue marine discovery quest
               </h2>
@@ -814,18 +812,22 @@
                 class="input modal__input"
                 placeholder="Your Full Name*"
                 name="name"
+                required
               />
               <input
                 type="text"
                 class="input modal__input"
+                id="phone-input"
                 placeholder="Phone Number*"
                 name="phone"
+                required
               />
               <input
-                type="text"
+                type="email"
                 class="input modal__input"
                 placeholder="Email*"
                 name="email"
+                required
               />
               <textarea
                 name="message"
@@ -856,12 +858,14 @@
                 class="input modal__input"
                 placeholder="Your Full Name*"
                 name="name"
+                required
               />
               <input
-                type="text"
+                type="email"
                 class="input modal__input"
                 placeholder="Email*"
                 name="email"
+                required
               />
               <textarea
                 name="message"
@@ -870,6 +874,7 @@
                 rows="10"
                 class="message modal__message"
                 placeholder="Message"
+                minlength="5"
               ></textarea>
               <button class="button modal__button" type="submit">Send</button>
               <span class="modal__required">*&nbsp;Required&nbsp;Fields</span>
@@ -884,6 +889,10 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/icon_customImage.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+
     <script src="js/main.js"></script>
   </body>
 </html>

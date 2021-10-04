@@ -3,9 +3,12 @@
 
 .modal  
   visibility: hidden
-  z-index: 100  
+  opacity: 0
+  z-index: 100    
   &--visible
       visibility: visible      
+      opacity: 1
+      
   &__overlay
     z-index: 100
     background: rgba(0, 143, 223, 0.39)
@@ -47,6 +50,7 @@
     line-height: 15px
     border: none
     resize: none
+    margin-top: 15px
     margin-bottom: 15px
   &__input    
     width: 100%
@@ -57,7 +61,7 @@
     font-size: 12px
     line-height: 15px    
     border: none
-    margin-bottom: 15px
+    margin-top: 15px
   &__button
     width: 160px
     height: 50px

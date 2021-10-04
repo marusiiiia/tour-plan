@@ -5,6 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+
+ 
 html {
   line-height: 1.15;
   /* 1 */
@@ -358,6 +360,10 @@ img {
 button {
   padding: 0;
   cursor: pointer;
+}
+
+.invalidd {
+  color: red;
 }
 
 .navbar {
@@ -1326,11 +1332,13 @@ button {
 
 .modal {
   visibility: hidden;
+  opacity: 0;
   z-index: 100;
 }
 
 .modal--visible {
   visibility: visible;
+  opacity: 1;
 }
 
 .modal__overlay {
@@ -1381,6 +1389,7 @@ button {
   line-height: 15px;
   border: none;
   resize: none;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -1393,7 +1402,7 @@ button {
   font-size: 12px;
   line-height: 15px;
   border: none;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__button {
